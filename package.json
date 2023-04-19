@@ -63,6 +63,6 @@
     "quoteProps": "as-needed"
   },
   "private": true,
-  "name": "qa-crowdsourcing-app",
+  "name": "GameQA",
   "version": "1.0.0"
 }
