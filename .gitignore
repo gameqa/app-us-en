@@ -9,10 +9,6 @@ npm-debug.*
 *.orig.*
 web-build/
 
-# eas files
-eas.json
-app.config.js
-
 # macOS
 .DS_Store
 
