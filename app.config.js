@@ -20,7 +20,7 @@ export default {
 			backgroundColor: "#FFA800",
 		},
 		googleServicesFile: process.env.GOOGLE_SERVICES_JSON,
-		bundleIdentifier: "com.gameqa.gameqa-en",
+		package: "com.gameqa.gameqaen",
 		permissions: [],
 		versionCode: ANDROID_BULD_NO,
 		config: {

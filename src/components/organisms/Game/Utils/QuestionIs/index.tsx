@@ -10,7 +10,7 @@ const QuestionIs = ({ question, center }: IProps) => {
 				...(center ? { textAlign: "center" } : {}),
 			}}
 		>
-			The question is „{question}“
+			The question is '{question}'
 		</Atoms.Text.Heading>
 	);
 };
