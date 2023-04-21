@@ -27,7 +27,7 @@ export default function index() {
 
 	const dispatch = useDispatch();
 
-	const url = "Https://spurningaris.app.link";
+	const url = "www.gameqa.app/implementations/us-en";
 
 	const alertCopy = () =>
 		Alert.alert("Copied to clipboard", "Copied to clipboard!", [
@@ -94,7 +94,7 @@ export default function index() {
 			<ScrollView>
 				<Molecules.Users.Info {...auth} />
 				<Atoms.Text.Para style={styles.paragraph}>
-				Share or copy the link to invite your friends to join!.👫🤝
+				Share or copy the link to invite your friends to join! 👫🤝
 				</Atoms.Text.Para>
 				<TouchableOpacity
 					onPress={handleCopy}
@@ -148,6 +148,9 @@ export default function index() {
 				<Atoms.Text.Heading>
 					Community Impact
 				</Atoms.Text.Heading>
+				<Atoms.Text.Para>
+					The line chart shows the number of questions users have asked over time. As the number grows, so do the language resources available for English.
+				</Atoms.Text.Para>
 				<Atoms.Charts.LineChart
 					datasets={[
 						{

@@ -231,6 +231,10 @@ const UserProgress = () => {
 			case ANSWER:
 				return (
 					<React.Fragment>
+						<Atoms.Text.Para>
+						Here you'll see answers to the questions you've asked the community to answer
+						🤓😁💡
+						</Atoms.Text.Para>
 						{/* Render all questions that have an unseen answer first */}
 						<FlatList
 							data={sortFlatListData(
@@ -253,7 +257,7 @@ const UserProgress = () => {
 			case NO_ANSWERS:
 				return (
 					<React.Fragment>
-						<Atoms.Text.Para style={{}}>
+						<Atoms.Text.Para>
 						These are questions other users were unable to find an answer for
 						🤓🤔
 						</Atoms.Text.Para>
@@ -278,6 +282,11 @@ const UserProgress = () => {
 			case IN_PROGRESS:
 				return (
 					<React.Fragment>
+
+						<Atoms.Text.Para>
+							Here you'll see questions you have asked which the community is trying to answer
+							🤝🔜💡
+						</Atoms.Text.Para>
 						{/* Render all questions that have an unseen answer first */}
 						<FlatList
 							data={sortFlatListData(questionsInProgress)}

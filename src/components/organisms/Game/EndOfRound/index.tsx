@@ -22,9 +22,9 @@ const EndOfRound = () => {
 		<View style={styles.outerCotnainer}>
 			<ScrollView style={styles.outer}>
 				<Atoms.Text.Heading>Well done! 👏</Atoms.Text.Heading>
-				<Atoms.Text.Collapsable style={styles.para}>
-				You've reached Level {auth.level} 🎉. Currently you're in position {auth.scoreCard.hiscoreRank} on the leaderboard 😎. The more you play, the more points you collect. All the questions you ask and the answers you find will be used to train artificial intelligence to answer questions in [LANGUAGE]. 🤖
-				</Atoms.Text.Collapsable>
+				<Atoms.Text.Para style={styles.para}>
+				You've reached Level {auth.level} 🎉. Currently you're in position {auth.scoreCard.hiscoreRank} on the leaderboard 😎. The more you play, the more points you collect. All the questions you ask and the answers you find will be used to train artificial intelligence to answer questions in English. 🤖
+				</Atoms.Text.Para>
 				{prizeCategories.map((item) => (
 					<Atoms.Cards.PrizeCategory {...item} />
 				))}

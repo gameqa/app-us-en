@@ -116,7 +116,7 @@ const Game = () => {
 				{!hasSigned ? (
 					<View>
 						<Atoms.Text.Heading style={styles.para}>
-						Integrity Pledge
+						Before we start
 						</Atoms.Text.Heading>
 						<Atoms.Text.Para style={styles.para}>
 						I pledge to play the game with integrity. I will write understandable questions, I will answer to the best of my ability and review questions and answers to the best of my ability.

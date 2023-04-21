@@ -62,7 +62,7 @@ const WriteQuestion = () => {
 			>
 				<Atoms.Alerts.Ribbon item={error} />
 				<Utils.Explain>
-					Write a question which other users can find the answer for with Google!. 🧑🔎🇮🇸
+					Write a question which other users can find the answer for with Google! 🧑🔎🇺🇸
 				</Utils.Explain>
 				<View style={styles.marginTop}>
 					<View style={styles.imagePreview}>
