@@ -82,8 +82,8 @@ const SpanSelector = ({
 			case "clear-selection":
 				dispatch(
 					addNotificationItem({
-						title: "Do you want to change the highlighed answer snippet?",
-						text: "Tap the text to choose again",
+						title: "Confirm the selection",
+						text: "If you're happy with the selection, confirm to move on to the next step. You can tap the text to choose again.",
 					})
 				);
 				break;
