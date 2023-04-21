@@ -55,9 +55,12 @@ const AskAboutImage = () => {
 			</View>
 			{hasLoaded ? (
 				<View style={styles.promptOuter}>
-					<Atoms.Text.Para>
+					<Atoms.Text.Para style={styles.promptText}>
 					You can (if you choose to) ask about{" "}
-						<Text style={styles.bold}>
+						<Text style={{
+							...styles.promptText,
+							...styles.bold
+						}}>
 							{state.image.subject_tf}
 						</Text>
 					</Atoms.Text.Para>
