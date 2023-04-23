@@ -133,16 +133,6 @@ const UserProgress = () => {
 		}, [questionWithUnseenAnswers])
 	);
 
-	const alertSignOut = () =>
-		Alert.alert("Sign Out", "Are you sure that you want to leave? 😢", [
-			{
-				text: "No ",
-				onPress: () => null,
-				style: "cancel",
-			},
-			{ text: "Yes", onPress: () => dispatch(logOutUser()) },
-		]);
-
 	// fired when notification is received while app is open
 	Hooks.Notifications.useNotificationListener((item) => {
 		// console.log("NEW NOTIFICATION:", item);
@@ -303,11 +293,11 @@ const UserProgress = () => {
 				<View>
 					<Molecules.Users.Info {...auth} />
 					<TouchableOpacity
-						onPress={alertSignOut}
+						onPress={() => navigation.navigate("Settings")}
 						style={styles.lock}
 					>
 						<FontAwesome
-							name="lock"
+							name="gear"
 							size={20}
 							color={Services.Colors.MapToDark["grey"]}
 						/>

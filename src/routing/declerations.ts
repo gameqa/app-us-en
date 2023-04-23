@@ -16,7 +16,7 @@ export type AuthStackItems =
 	| "set-new-password";
 
 export type GameStackItems = "Play" | "article-reader" | "prize-items";
-export type ProfileStackItems = "Profile" | "Google" | "article-reader"
+export type ProfileStackItems = "Profile" | "Settings" | "Google" | "article-reader"
 
 export type Icons =
 	| "puzzle-piece"
