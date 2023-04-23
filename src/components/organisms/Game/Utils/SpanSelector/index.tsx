@@ -69,7 +69,7 @@ const SpanSelector = ({
 						title: "Select answer snippet",
 						text: "Tap the first character of the answer snippet",
 					})
-				);i
+				);
 				break;
 			case "select-last":
 				dispatch(
