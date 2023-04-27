@@ -45,40 +45,11 @@ const reducer = (state: State = initialState, action: Actions): State => {
 				...action.payload,
 				isResettingLevel: false,
 			};
-		// case ActionTypes.fetchScoreCard:
-		// 	return {
-		// 		...state,
-		// 		scoreCard: action.payload,
-		// 	};
-		// case ActionTypes.setIsWaitingForNewAuthCode:
-		// 	return {
-		// 		...state,
-		// 		isAuthCodeRegenerationLoading: action.payload,
-		// 	};
-		// case ActionTypes.setAuthCodeErrorMessage: {
-		// 	return {
-		// 		...state,
-		// 		authCodeErrorMessage: action.payload,
-		// 	};
-		// }
-		// case ActionTypes.setIsWaitingForVerification: {
-		// 	return {
-		// 		...state,
-		// 		isAuthCodeSubmissionLoading: action.payload,
-		// 	};
-		// }
-		// case ActionTypes.setIsWaitingForCompletingTutorial: {
-		// 	return {
-		// 		...state,
-		// 		isTutorialCompletedLoading: action.payload,
-		// 	};
-		// }
-		// case ActionTypes.completeTutorial: {
-		// 	return {
-		// 		...state,
-		// 		hasCompletedTutorial: true,
-		// 	};
-		// }
+		case ActionTypes.moveToTutorial:
+			return {
+				...state,
+				type: "on-tutorial"
+			}
 		case ActionTypes.fetchInvites: {
 			return {
 				...state,

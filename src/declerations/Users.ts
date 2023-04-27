@@ -28,4 +28,5 @@ export type UserType =
 	| "loading"
 	| "guest"
 	| "not-verified"
-	| "deleted";
+	| "deleted"
+	| "on-tutorial";

@@ -71,6 +71,7 @@ export enum ActionTypes {
 	resetLevel,
 	setResettingLevel,
 	setImpossibleQuestion,
+	moveToTutorial
 }
 
 export type Actions =
@@ -80,6 +81,7 @@ export type Actions =
 	| Auth.Actions.FetchInvitesAction
 	| Auth.Actions.ResetLevelAction
 	| Auth.Actions.SetResettingLevelAction
+	| Auth.Actions.MoveToTutorialAction
 	| Game.Actions.SetCurrentGameRoundAction
 	| Game.Actions.StartWriteQuestionRoundFromAPIAction
 	| Game.Actions.StartVerifyQuestionRoundFromAPIAction

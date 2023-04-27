@@ -31,10 +31,13 @@ export const verifyUser = (verificationCode: string) => {
 				verificationCode,
 			});
 			// reuse action
-			dispatch<Auth.Actions.FetchUserFromTokenAction>({
-				type: ActionTypes.fetchUserFromToken,
-				payload: user,
-			});
+			// dispatch<Auth.Actions.FetchUserFromTokenAction>({
+			// 	type: ActionTypes.fetchUserFromToken,
+			// 	payload: {
+			// 		...user,
+			// 		type: ""
+			// 	},
+			// });
 		} catch (error) {
 			// set error message on error
 			dispatch<SetAuthCodeErrorMessageAction>({

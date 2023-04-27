@@ -107,7 +107,7 @@ const ReviewAnswer = () => {
 						onApprove={() => handleVerifyDispatch(true)}
 						onDecline={() => handleVerifyDispatch(false)}
 					>
-						Is the highlighted answer snippet short (👍) or longer than it needs to be (👎)?
+						Is the highlighted answer snippet short 👍 or longer than it needs to be 👎?
 					</Utils.VerifyButtons>
 				) : stage === "verify-boolean" ? (
 					<Utils.VerifyButtons

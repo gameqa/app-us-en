@@ -28,3 +28,7 @@ export interface ResetLevelAction {
 export interface SetResettingLevelAction {
 	type: ActionTypes.setResettingLevel;
 }
+
+export interface MoveToTutorialAction {
+	type: ActionTypes.moveToTutorial;
+}

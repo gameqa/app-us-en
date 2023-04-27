@@ -47,10 +47,12 @@ const SpanSelector = ({
 
 	if (immutable) action = () => null;
 
-	const shouldHighlight = (i: number) =>
-		i == firstWord || (i >= firstWord! && i <= lastWord!);
+	const shouldHighlight = (i: number) =>  {
+		if(firstWord === undefined && lastWord === undefined) return false;
+		return i == firstWord || (i >= firstWord! && i <= lastWord!);
+	}
 
-	const wordArray = useMemo(() => paragraph.split(" "), [paragraph]);
+	const wordArray = useMemo(() => paragraph.split(" "), [paragraph, firstWord, lastWord]);
 
 	const dispatch = useDispatch();
 
@@ -66,16 +68,16 @@ const SpanSelector = ({
 			case "select-first":
 				dispatch(
 					addNotificationItem({
-						title: "Select answer snippet",
-						text: "Tap the first character of the answer snippet",
+						title: "Select the first word",
+						text: "Tap the first character of an answer snippet that answers the question",
 					})
 				);
 				break;
 			case "select-last":
 				dispatch(
 					addNotificationItem({
-						title: "Select answer snippet",
-						text: "Tap the last character of the answer snippet",
+						title: "Select the last word",
+						text: "Tap the last character of an answer snippet that answers the question",
 					})
 				);
 				break;
@@ -101,17 +103,16 @@ const SpanSelector = ({
 					<TouchableOpacity
 						onPress={() => handleClick(i)}
 						activeOpacity={1}
+						key={word}
 					>
 						<Text
-							style={{
+							style={shouldHighlight(i) ? {
 								...styles.word,
-								color: shouldHighlight(i)
-									? Colors.MapToDark.highlight
-									: "#666",
-
-								textDecorationLine: shouldHighlight(i)
-									? "underline"
-									: "none",
+								color: Colors.MapToDark["light-grey"],
+								backgroundColor:  Colors.MapToDark.highlight
+							} : {
+								...styles.word,
+								color: "#666",
 							}}
 						>
 							{word}

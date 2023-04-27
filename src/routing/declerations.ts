@@ -18,6 +18,8 @@ export type AuthStackItems =
 export type GameStackItems = "Play" | "article-reader" | "prize-items";
 export type ProfileStackItems = "Profile" | "Settings" | "Google" | "article-reader"
 
+export type TutorialStack = "ask-question" | "verify-question" | "find-answer" | "highlight-answer" | "verify-answer" | "end-of-tutorial";
+
 export type Icons =
 	| "puzzle-piece"
 	| "tachometer"

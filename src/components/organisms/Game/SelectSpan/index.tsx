@@ -27,6 +27,12 @@ const SelectSpan = () => {
 		[auth._id]
 	);
 
+	useEffect(() => {
+		console.log("Hello")
+		if(stage === "verify-answer-present")
+			dispatch(Actions.SelectSpan.clearRange())
+	}, [stage])
+
 	// stores key as seen
 	const markKeyAsSeen = useCallback(async () => {
 		try {
