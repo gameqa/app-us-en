@@ -17,7 +17,7 @@ const getQuestions = (): CheckListItem[] => [
 	{
 		title: "The answer doesn't change",
 		description:
-			"I think the answer should be the same no matter who answers the question or what day of the way it is asked",
+			"I think the answer should be the same no matter who answers the question or what day of the day it is asked",
 		value: false,
 		badQuestionPrompt: "Does the answer change depending on the situation?",
 	},
