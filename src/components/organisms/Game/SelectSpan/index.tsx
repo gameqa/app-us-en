@@ -28,7 +28,6 @@ const SelectSpan = () => {
 	);
 
 	useEffect(() => {
-		console.log("Hello")
 		if(stage === "verify-answer-present")
 			dispatch(Actions.SelectSpan.clearRange())
 	}, [stage])
@@ -168,9 +167,9 @@ const SelectSpan = () => {
 						<Atoms.Buttons.Base
 							label="Go back"
 							type="danger"
-							onPress={() =>
+							onPress={() =>{
 								setStage("verify-answer-present")
-							}
+							}}
 						/>
 					</React.Fragment>
 				) : null}
