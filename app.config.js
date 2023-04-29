@@ -1,5 +1,5 @@
-const VERSION = "1.0.4";
-const ANDROID_BULD_NO = 3;
+const VERSION = "1.0.5";
+const ANDROID_BULD_NO = 4;
 
 export default {
 	slug: "GameQA",

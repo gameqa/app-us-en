@@ -169,7 +169,7 @@ export default function index() {
 					]}
 					labels={chartData.answersPerDay.map((item, i) => {
 						if (i === 0)
-							return moment(item.date).format("DD MM");
+							return moment(item.date).format("MM DD");
 						else if (i === chartData.answersPerDay.length - 1)
 							return "Today      ";
 						return "";

@@ -27,7 +27,7 @@ const QuestionAnswerCard = (question: Interface.IProps) => {
 	const navigation = useNavigation();
 	const dispatch = useDispatch();
 
-	moment.locale("is");
+	moment.locale("en");
 
 	const DEFAULT_SENDER: User = {
 		username: "",
